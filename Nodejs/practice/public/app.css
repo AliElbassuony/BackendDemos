@@ -1,0 +1,27 @@
+body{
+    background-color: #333333;
+    color: #f7e80e;
+    
+}
+input{
+    margin: 10px;
+    border-radius: 10px;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    font-size: 18px;
+    color: cornflowerblue;
+}
+input::placeholder{
+    padding: 10px;
+    color: black;
+}
+button{
+    border: 1px solid transparent;
+    color: #333;
+    background-color:white ;
+    width: 80px;
+    outline: none;
+    height: 20px;
+    border-radius: 10px;
+}

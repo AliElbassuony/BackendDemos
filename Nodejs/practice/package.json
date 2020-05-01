@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cat-me": "^1.0.3",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "knock-knock-jokes": "^1.7.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "yargs": "^15.3.1"
+  }
+}

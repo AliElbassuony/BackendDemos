@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTful Routes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="jumbotron" style="padding: 2rem 1rem;">
+            <div class="container">
+                <h1 style="font-weight: 500;font-size: 65px;">RESTful Routes</h1>
+                <p style="font-size: 25px;">A table of all 7 RESTful routes</p>
+            </div>
+        </header>
+        <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Path</th>
+                <th scope="col">HTTP Verb</th>
+                <th scope="col">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Index</th>
+                <td>/items</td>
+                <td>GET</td>
+                <td>List all items</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">New</th>
+                <td>/items/new</td>
+                <td>GET</td>
+                <td>Show new item form</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">Create</th>
+                <td>/items</td>
+                <td>POST</td>
+                <td>Create a new item, then redirect somewhere</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">Show</th>
+                <td>/items/:id</td>
+                <td>GET</td>
+                <td>Show info about one specific item</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">Edit</th>
+                <td>/items/:id/edit</td>
+                <td>GET</td>
+                <td>Show edit form for one item</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">Update</th>
+                <td>/items/:id</td>
+                <td>PUT</td>
+                <td>Update a particular item, then redirect somewhere</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">Destroy</th>
+                <td>/items/:id</td>
+                <td>DELETE</td>
+                <td>Delete a particular item, then redirect somewhere</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>

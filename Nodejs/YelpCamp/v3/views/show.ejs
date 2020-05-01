@@ -1,0 +1,18 @@
+<%- include('partials/header')%>
+<div class="container ">
+    <div class="d-flex justify-content-center">
+        <div class="card col-md-6 ">
+            <img class="card-img-top" src='<%= camp.image %>' />
+            <div class="card-body">
+                <h1 class="card-title"><%= camp.name %></h1>
+                <p class="card-text"><%= camp.desc %></p>
+            </div>
+            <% camp.comments.forEach(comment => { %>
+                <h1 class="card-title"><%= comment.author %></h1>
+                <p class="card-text"><%= comment.text %></p>
+            <%});%>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
